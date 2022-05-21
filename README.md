@@ -1,7 +1,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Redux BookStore app
- This is a Rect App done step-by-step using Redux and bootstrao.This app is part of #100DaysOfCode challenge. 
+ This is a Rect App done step-by-step using Redux and bootstrap.This app is part of #100DaysOfCode challenge. 
     
 ## Built With
 
