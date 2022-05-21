@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
+import Spinner from "./Spinner";
 //axios
 import axios from "axios";
 //redux
@@ -8,12 +9,14 @@ import { SET_PRODUCTS } from "../redux/actionTypes";
 import ProductComponent from "./ProductComponent";
 
 const ProductListing = () => {
-	const products = useSelector((state) => state);
 	const dispatch = useDispatch();
+	const [loading, setLoading] = useState(false);
 
 	const fetchProducts = async () => {
+		setLoading(true);
 		const response = await axios.get("https://fakestoreapi.com/products");
 		dispatch({ type: SET_PRODUCTS, payload: response.data });
+		setLoading(false);
 	};
 
 	useEffect(() => {
@@ -22,7 +25,7 @@ const ProductListing = () => {
 
 	return (
 		<div className="container">
-			<ProductComponent />
+			{loading ? <Spinner /> : <ProductComponent />}
 		</div>
 	);
 };
