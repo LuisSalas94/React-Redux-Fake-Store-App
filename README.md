@@ -33,9 +33,10 @@ $ npm start # or yarn start
 
 ## Live Demo
 
-[Live Demo Link](https://fernando-redux-contact-app.netlify.app/)
+[Live Demo Link](https://fernando-redux-fake-store.netlify.app)
 
 ## Author
+
 
 - GitHub: [@LuisSalas94](https://github.com/LuisSalas94)
 - LinkedIn: [Fernando Salas](https://www.linkedin.com/in/luisfernandosalasgave/)
